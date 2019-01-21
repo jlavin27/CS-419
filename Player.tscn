@@ -1,14 +1,49 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://roguelikeDungeon_transparent.png" type="Texture" id=2]
+[ext_resource path="res://src/Warrior/3.png" type="Texture" id=2]
+[ext_resource path="res://src/Warrior/4.png" type="Texture" id=3]
+[ext_resource path="res://src/Warrior/5.png" type="Texture" id=4]
+[ext_resource path="res://src/Warrior/9.png" type="Texture" id=5]
+[ext_resource path="res://src/Warrior/10.png" type="Texture" id=6]
+[ext_resource path="res://src/Warrior/11.png" type="Texture" id=7]
+[ext_resource path="res://src/Warrior/6.png" type="Texture" id=8]
+[ext_resource path="res://src/Warrior/7.png" type="Texture" id=9]
+[ext_resource path="res://src/Warrior/8.png" type="Texture" id=10]
+[ext_resource path="res://src/Warrior/0.png" type="Texture" id=11]
+[ext_resource path="res://src/Warrior/1.png" type="Texture" id=12]
+[ext_resource path="res://src/Warrior/2.png" type="Texture" id=13]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Right",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Left",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Down",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "Up",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 5, 7 )
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 position = Vector2( 6.76861, 5.2018 )
 input_pickable = false
@@ -21,24 +56,26 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
 
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( 51, 34, 16, 16 )
-_sections_unfolded = [ "Region" ]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "Down"
+frame = 1
+playing = true
+_sections_unfolded = [ "Region", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
 position = Vector2( 0.125347, 0.877413 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
 
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 0.33, 0.33 )
+zoom = Vector2( 0.25, 0.33 )
 limit_left = -10000000
 limit_top = -10000000
 limit_right = 10000000
