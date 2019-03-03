@@ -1,0 +1,919 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/DawnLike/Objects/Floor.png" type="Texture" id=1]
+[ext_resource path="res://src/DawnLike/Objects/Wall.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8, 8 )
+
+[node name="Floot Map" type="Node"]
+
+[node name="Stone TL" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone TC" type="Sprite" parent="." index="1"]
+
+position = Vector2( 20, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone TR" type="Sprite" parent="." index="2"]
+
+position = Vector2( 40, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone CL" type="Sprite" parent="." index="3"]
+
+position = Vector2( 0, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone C" type="Sprite" parent="." index="4"]
+
+position = Vector2( 20, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone CR" type="Sprite" parent="." index="5"]
+
+position = Vector2( 40, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone BL" type="Sprite" parent="." index="6"]
+
+position = Vector2( 0, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone BC" type="Sprite" parent="." index="7"]
+
+position = Vector2( 20, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone BR" type="Sprite" parent="." index="8"]
+
+position = Vector2( 40, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone ST" type="Sprite" parent="." index="9"]
+
+position = Vector2( 60, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone SC" type="Sprite" parent="." index="10"]
+
+position = Vector2( 60, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone SB" type="Sprite" parent="." index="11"]
+
+position = Vector2( 60, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone SCL" type="Sprite" parent="." index="12"]
+
+position = Vector2( 80, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone SCH" type="Sprite" parent="." index="13"]
+
+position = Vector2( 100, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone SCR" type="Sprite" parent="." index="14"]
+
+position = Vector2( 120, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone S" type="Sprite" parent="." index="15"]
+
+position = Vector2( 100, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass TL" type="Sprite" parent="." index="16"]
+
+position = Vector2( 0, 60 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass TC" type="Sprite" parent="." index="17"]
+
+position = Vector2( 20, 60 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass TR" type="Sprite" parent="." index="18"]
+
+position = Vector2( 40, 60 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass CR" type="Sprite" parent="." index="19"]
+
+position = Vector2( 40, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass C" type="Sprite" parent="." index="20"]
+
+position = Vector2( 20, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass CL" type="Sprite" parent="." index="21"]
+
+position = Vector2( 0, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass BL" type="Sprite" parent="." index="22"]
+
+position = Vector2( 0, 100 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass BC" type="Sprite" parent="." index="23"]
+
+position = Vector2( 20, 100 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass BL2" type="Sprite" parent="." index="24"]
+
+position = Vector2( 40, 100 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass STV" type="Sprite" parent="." index="25"]
+
+position = Vector2( 60, 60 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass SVC" type="Sprite" parent="." index="26"]
+
+position = Vector2( 60, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass SVB" type="Sprite" parent="." index="27"]
+
+position = Vector2( 60, 100 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 176, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass SHL" type="Sprite" parent="." index="28"]
+
+position = Vector2( 80, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass SHC" type="Sprite" parent="." index="29"]
+
+position = Vector2( 100, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass SHR" type="Sprite" parent="." index="30"]
+
+position = Vector2( 120, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 160, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Grass S" type="Sprite" parent="." index="31"]
+
+position = Vector2( 100, 60 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 144, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Stone Wall TL" type="Sprite" parent="." index="32"]
+
+editor/display_folded = true
+position = Vector2( 140, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall TL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall TL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall TC" type="Sprite" parent="." index="33"]
+
+editor/display_folded = true
+position = Vector2( 160, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 16, 192, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall TC" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall TC/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall TR" type="Sprite" parent="." index="34"]
+
+editor/display_folded = true
+position = Vector2( 180, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 192, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall TR" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall TR/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall CL" type="Sprite" parent="." index="35"]
+
+editor/display_folded = true
+position = Vector2( 140, 20 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 208, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall CL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall CL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall C" type="Sprite" parent="." index="36"]
+
+editor/display_folded = true
+position = Vector2( 220, 40 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 16, 208, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall C" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall C/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall BL" type="Sprite" parent="." index="37"]
+
+editor/display_folded = true
+position = Vector2( 140, 40 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 224, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall BL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall BL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall BR" type="Sprite" parent="." index="38"]
+
+editor/display_folded = true
+position = Vector2( 180, 40 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 224, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall BR" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall BR/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall CL2" type="Sprite" parent="." index="39"]
+
+editor/display_folded = true
+position = Vector2( 200, 20 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 48, 208, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall CL2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall CL2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall" type="Sprite" parent="." index="40"]
+
+editor/display_folded = true
+position = Vector2( 160, 20 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Stone Wall TC2" type="Sprite" parent="." index="41"]
+
+editor/display_folded = true
+position = Vector2( 220, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall TC2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall TC2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall C2" type="Sprite" parent="." index="42"]
+
+editor/display_folded = true
+position = Vector2( 220, 20 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 208, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall C2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall C2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall B" type="Sprite" parent="." index="43"]
+
+editor/display_folded = true
+position = Vector2( 160, 40 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 224, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall B" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall B/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Stone Wall CR2" type="Sprite" parent="." index="44"]
+
+editor/display_folded = true
+position = Vector2( 240, 20 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 80, 208, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stone Wall CR2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone Wall CR2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall TL" type="Sprite" parent="." index="45"]
+
+editor/display_folded = true
+position = Vector2( 140, 60 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 384, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall TL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall TL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall TC" type="Sprite" parent="." index="46"]
+
+editor/display_folded = true
+position = Vector2( 160, 60 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 16, 384, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall TC" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall TC/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall TR" type="Sprite" parent="." index="47"]
+
+editor/display_folded = true
+position = Vector2( 180, 60 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 384, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall TR" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall TR/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall CL" type="Sprite" parent="." index="48"]
+
+editor/display_folded = true
+position = Vector2( 140, 80 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 400, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall CL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall CL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall" type="Sprite" parent="." index="49"]
+
+editor/display_folded = true
+position = Vector2( 160, 80 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 48, 384, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall BL" type="Sprite" parent="." index="50"]
+
+editor/display_folded = true
+position = Vector2( 140, 100 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 416, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall BL" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall BL/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall BR" type="Sprite" parent="." index="51"]
+
+editor/display_folded = true
+position = Vector2( 180, 100 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 416, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall BR" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall BR/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall C" type="Sprite" parent="." index="52"]
+
+editor/display_folded = true
+position = Vector2( 220, 100 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 16, 400, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall C" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall C/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall B" type="Sprite" parent="." index="53"]
+
+editor/display_folded = true
+position = Vector2( 160, 100 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 416, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall B" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall B/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall CL2" type="Sprite" parent="." index="54"]
+
+editor/display_folded = true
+position = Vector2( 200, 80 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 48, 400, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall CL2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall CL2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall CR2" type="Sprite" parent="." index="55"]
+
+editor/display_folded = true
+position = Vector2( 240, 80 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 80, 400, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall CR2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall CR2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall C2" type="Sprite" parent="." index="56"]
+
+editor/display_folded = true
+position = Vector2( 220, 80 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 400, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall C2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall C2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Dirt Wall CT2" type="Sprite" parent="." index="57"]
+
+editor/display_folded = true
+position = Vector2( 220, 60 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 384, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt Wall CT2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt Wall CT2/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+

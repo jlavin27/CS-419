@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-const MAX_SPEED = .75
-const ACCELERATION = .75
-const DECELERATION = 4
+const MAX_SPEED = 1
+const ACCELERATION = .5
+const DECELERATION = 2
 var direction = Vector2()
 var motion = Vector2()
 
@@ -17,9 +17,9 @@ func _physics_process(delta):
 		direction = Vector2(0,1)
 		$Sprite.play("Down")
 	else:
-		if motion.y >= MAX_SPEED * 33:
+		if motion.y >= MAX_SPEED:
 			motion.y -= DECELERATION
-		elif motion.y <= -MAX_SPEED * .33:
+		elif motion.y <= -MAX_SPEED:
 			motion.y += DECELERATION
 		else:
 			motion.y = 0
@@ -33,9 +33,9 @@ func _physics_process(delta):
 		direction = Vector2(1,0)
 		$Sprite.play("Right")
 	else:
-		if motion.x >= MAX_SPEED * 33:
+		if motion.x >= MAX_SPEED:
 			motion.x -= DECELERATION
-		elif motion.x <= -MAX_SPEED * 33:
+		elif motion.x <= -MAX_SPEED:
 			motion.x += DECELERATION
 		else:
 			motion.x = 0

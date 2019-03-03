@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/DawnLike/Objects/Floor.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="0" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="1" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="2" type="Sprite" parent="." index="2"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="3" type="Sprite" parent="." index="3"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="4" type="Sprite" parent="." index="4"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 32, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="5" type="Sprite" parent="." index="5"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="6" type="Sprite" parent="." index="6"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="7" type="Sprite" parent="." index="7"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="8" type="Sprite" parent="." index="8"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="9" type="Sprite" parent="." index="9"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="10" type="Sprite" parent="." index="10"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="11" type="Sprite" parent="." index="11"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="12" type="Sprite" parent="." index="12"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="13" type="Sprite" parent="." index="13"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="14" type="Sprite" parent="." index="14"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 32, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="15" type="Sprite" parent="." index="15"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+
