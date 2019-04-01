@@ -118,7 +118,7 @@ func draw_map():
 			elif id == 14:
 				instance = BE.instance()
 			if instance != null:
-				room.translate(Vector2(x*224,y*224))
+				room.translate(Vector2(x*room_size,y*room_size))
 				room.add_child(instance)
 				add_child(room)
 
